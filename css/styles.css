@@ -117,6 +117,12 @@ footer {
     list-style: none; }
     footer ul li {
       padding: 10px; }
+      footer ul li a {
+        text-decoration: none;
+        color: #4c545d;
+        transition: color .2s ease-in-out; }
+        footer ul li a:hover {
+          color: #26baa4; }
   footer .social-icons {
     margin-top: 50px; }
     footer .social-icons img {
@@ -180,7 +186,8 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 60px;
-    width: 1440px; }
+    width: 1440px;
+    text-align: left; }
     footer .logo {
       margin: 0; }
     footer .social-icons {

@@ -197,6 +197,15 @@ footer {
 
     li {
       padding: 10px;
+
+      a {
+        text-decoration: none;
+        color: $grayish-blue-dark;
+        transition: color .2s ease-in-out;
+        &:hover{
+          color: $cyan;
+        }
+      }
     }
   }
 
@@ -305,6 +314,7 @@ footer {
     align-items: flex-start;
     padding-top: 60px;
     width: 1440px;
+    text-align: left;
 
     .logo {
       margin: 0;
