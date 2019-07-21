@@ -1,7 +1,7 @@
 // Variables
 
 $body-family: 'Bai Jamjuree', sans-serif;
-$body-font-size: 18px;
+$root-font-size: 18px;
 
 $cyan: hsl(171, 66%, 44%);
 $light-blue: hsl(233, 100%, 69%);
@@ -30,6 +30,7 @@ $desktop-size: 1440px;
 
 html {
   box-sizing: border-box;
+  font-size: $root-font-size;
 }
 
 *, *::after, *::before{
@@ -40,7 +41,7 @@ html {
 
 body {
   font-family: $body-family;
-  font-size: $body-font-size;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -51,6 +52,7 @@ h1,h2,h3 {
 }
 
 p {
+  font-size: 1rem;
   padding: 20px;
   color: $grayish-blue;
 }
@@ -193,5 +195,96 @@ footer {
     img:not(:first-child) {
       margin-left: 30px;
     }
+  }
+}
+
+// Desktop Version
+
+@media(min-width: $desktop-size){
+  html {
+    font-size: 20px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .site-wrapper{
+    width: 1440px;
+  }
+
+  .access, .info, .downloads {
+    p, h2 {
+      width: 800px;
+    }
+  }
+
+  header{
+    background-image: 
+    linear-gradient(to bottom, transparent, $white),
+    url('../images/bg-header-desktop.png');
+  }
+
+  .features {
+    flex-direction: row;
+
+    img {
+      width: 50%;
+    }
+
+    &__list {
+      margin-left: 100px; 
+      width: 50%;
+      text-align: left;
+    }
+    p {
+      padding-left: 0;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .workflow {
+    margin-bottom: 20px;
+    &-wrapper{
+      margin-top: 60px; 
+      justify-content: space-between;
+      width: 100%;
+      display: flex;
+    }
+    &__item{
+      width: 33%;
+    }
+  }
+
+  .companies{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+    img:first-child {
+      margin-top: 70px;
+      height: 40px;
+    }
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 60px;
+
+    .logo {
+      margin: 0;
+    }
+  }
+
+  .btn-primary, .btn-secondary {
+    font-size: 1rem;
+    text-align: center;
+    width: 300px;
   }
 }
