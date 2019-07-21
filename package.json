@@ -1,0 +1,33 @@
+{
+  "name": "clipboard-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-cli": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheriallis/clipboard-landing-page.git"
+  },
+  "author": "Sheri Richardson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheriallis/clipboard-landing-page/issues"
+  },
+  "homepage": "https://github.com/sheriallis/clipboard-landing-page#readme"
+}
