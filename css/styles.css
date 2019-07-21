@@ -61,6 +61,14 @@ section {
     border-bottom: 3px solid #7E87E2;
     box-shadow: 0px 4px 8px #8896ff; }
 
+.icon {
+  fill: #4c545d;
+  width: 50px;
+  height: 50px;
+  transition: fill .2s ease-in-out; }
+  .icon:hover {
+    fill: #26baa4; }
+
 .site-wrapper {
   width: 100%; }
 
@@ -125,10 +133,8 @@ footer {
           color: #26baa4; }
   footer .social-icons {
     margin-top: 50px; }
-    footer .social-icons img {
-      height: 20px; }
-    footer .social-icons img:not(:first-child) {
-      margin-left: 30px; }
+    footer .social-icons a {
+      text-decoration: none; }
 
 @media (min-width: 1440px) {
   html {

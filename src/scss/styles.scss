@@ -94,6 +94,16 @@ section {
   }
 }
 
+.icon {
+  fill: $grayish-blue-dark;
+  width: 50px;
+  height: 50px;
+  transition: fill .2s ease-in-out;
+  &:hover{
+    fill: $cyan;
+  }
+}
+
 // Site Wrapper
 
 .site-wrapper {
@@ -211,12 +221,9 @@ footer {
 
   .social-icons{
     margin-top: 50px;
-    img {
-      height: 20px;
-    }
-
-    img:not(:first-child) {
-      margin-left: 30px;
+    
+    a {
+      text-decoration: none;
     }
   }
 }
