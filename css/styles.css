@@ -64,7 +64,7 @@ header {
   header .logo {
     margin-bottom: 50px; }
 
-.downloads p {
+.download p {
   margin-bottom: 30px; }
 
 .info {
@@ -123,7 +123,7 @@ footer {
     flex-direction: column; }
   .site-wrapper {
     width: 1440px; }
-  .access p, .access h2, .info p, .info h2, .downloads p, .downloads h2 {
+  .access p, .access h2, .info p, .info h2, .download p, .download h2 {
     width: 800px; }
   header {
     background-image: linear-gradient(to bottom, transparent, #fff), url("../images/bg-header-desktop.png"); }
