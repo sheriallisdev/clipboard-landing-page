@@ -125,8 +125,11 @@ footer {
     width: 800px; }
   header {
     background-image: linear-gradient(to bottom, transparent, #fff), url("../images/bg-header-desktop.png"); }
+  .access {
+    margin-bottom: 60px; }
   .features {
-    flex-direction: row; }
+    flex-direction: row;
+    margin-top: 60px; }
     .features img {
       width: 50%; }
     .features__list {

@@ -227,8 +227,13 @@ footer {
     url('../images/bg-header-desktop.png');
   }
 
+  .access {
+    margin-bottom: 60px;
+  }
+
   .features {
     flex-direction: row;
+    margin-top: 60px; 
 
     img {
       width: 50%;
