@@ -1,4 +1,13 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
 body {
-  font-family: 'Bai Jamjuree', sans-serif; }
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px; }
 
 /*# sourceMappingURL=styles.css.map */
