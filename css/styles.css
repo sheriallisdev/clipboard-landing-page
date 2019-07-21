@@ -24,7 +24,8 @@ body {
   text-align: center; }
 
 h1, h2, h3 {
-  color: #4c545d; }
+  color: #4c545d;
+  font-weight: 600; }
 
 p {
   padding: 20px;
@@ -68,5 +69,20 @@ header {
 
 .features p {
   margin-bottom: 40px; }
+
+.access img {
+  width: 90%; }
+
+.workflow p {
+  margin-bottom: 60px; }
+
+.workflow:__item {
+  padding: 20px; }
+
+.workflow h3 {
+  margin-top: 30px; }
+
+.workflow img {
+  height: 40px; }
 
 /*# sourceMappingURL=styles.css.map */

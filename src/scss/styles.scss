@@ -43,8 +43,10 @@ body {
   text-align: center;
 }
 
+
 h1,h2,h3 {
   color: $grayish-blue-dark;
+  font-weight: 600;
 }
 
 p {
@@ -117,5 +119,32 @@ header{
 
   p {
     margin-bottom: 40px;
+  }
+}
+
+// Access
+.access {
+  img {
+    width: 90%;
+  }
+}
+
+// Workflow
+
+.workflow{
+  p {
+    margin-bottom: 60px;
+  }
+
+  &:__item {
+    padding: 20px;
+  }
+
+  h3 {
+    margin-top: 30px;
+  }
+
+  img {
+    height: 40px;
   }
 }
