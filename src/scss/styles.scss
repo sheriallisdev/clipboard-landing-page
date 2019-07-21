@@ -208,6 +208,8 @@ footer {
   body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
 
@@ -276,14 +278,27 @@ footer {
     }
   }
 
+  .footer-wrapper{
+    width: 100%;
+    background-color: $light-gray;
+    display: flex;
+    justify-content: center;
+  }
+
   footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 60px;
+    width: 1440px;
 
     .logo {
       margin: 0;
+    }
+
+    .social-icons {
+      margin-top: 0;
+      align-self: center;
     }
   }
 

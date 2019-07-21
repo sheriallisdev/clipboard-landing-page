@@ -118,7 +118,9 @@ footer {
     font-size: 20px; }
   body {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
   .site-wrapper {
     width: 1440px; }
   .access p, .access h2, .info p, .info h2, .downloads p, .downloads h2 {
@@ -157,13 +159,22 @@ footer {
     .companies img:first-child {
       margin-top: 70px;
       height: 40px; }
+  .footer-wrapper {
+    width: 100%;
+    background-color: #F5F6F8;
+    display: flex;
+    justify-content: center; }
   footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    padding-top: 60px; }
+    padding-top: 60px;
+    width: 1440px; }
     footer .logo {
       margin: 0; }
+    footer .social-icons {
+      margin-top: 0;
+      align-self: center; }
   .btn-primary, .btn-secondary {
     font-size: 1rem;
     text-align: center;
