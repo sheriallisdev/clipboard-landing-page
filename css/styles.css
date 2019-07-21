@@ -134,7 +134,7 @@ footer {
   footer .social-icons {
     margin-top: 50px; }
     footer .social-icons a {
-      text-decoration: none; }
+      color: transparent; }
 
 @media (min-width: 1440px) {
   html {

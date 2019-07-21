@@ -12,6 +12,11 @@ $white: #fff;
 
 $desktop-size: 1440px;
 
+// Mixins
+
+@mixin shadow($color){
+  box-shadow: 0px 4px 8px $color;
+}
 
 %button {
   display: inline-flex;
@@ -23,7 +28,7 @@ $desktop-size: 1440px;
   font-weight: 600;
   font-size: 14px;
   border-radius: 50px;
-  box-shadow: 0px 4px 8px rgba(23, 23, 23, .2);
+  @include shadow(rgba(23, 23, 23, .2));
   transition: all .2s ease-in-out;
   &:hover{
     cursor: pointer;
@@ -79,7 +84,7 @@ section {
   &:hover{
     background-color: #5DCCBB;
     border-bottom: 3px solid #52B7A7;
-    box-shadow: 0px 4px 8px rgba(93, 204, 187, 1); 
+    @include shadow(rgba(93, 204, 187, 1)); 
   }
 }
 
@@ -90,7 +95,7 @@ section {
   &:hover{
     background-color: #8896FF;
     border-bottom: 3px solid #7E87E2;
-    box-shadow: 0px 4px 8px rgba(136, 150, 255, 1);
+    @include shadow(rgba(136, 150, 255, 1));
   }
 }
 
@@ -223,7 +228,7 @@ footer {
     margin-top: 50px;
     
     a {
-      text-decoration: none;
+      color: transparent;
     }
   }
 }
