@@ -7,8 +7,23 @@ $cyan: hsl(171, 66%, 44%);
 $light-blue: hsl(233, 100%, 69%);
 $grayish-blue: hsl(201, 11%, 66%);
 $grayish-blue-dark: hsl(210, 10%, 33%);
+$white: #fff;
 
 $desktop-size: 1440px;
+
+
+%button {
+  display: inline-flex;
+  text-decoration: none;
+  padding: 15px 60px;
+  margin: 10px;
+  width: 250px;
+  color: $white;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px rgba(23, 23, 23, .2);
+}
 
 // Base Styles
 
@@ -25,4 +40,63 @@ html {
 body {
   font-family: $body-family;
   font-size: $body-font-size;
+  text-align: center;
+}
+
+h1,h2,h3 {
+  color: $grayish-blue-dark;
+}
+
+p {
+  padding: 20px;
+  color: $grayish-blue;
+}
+
+section {
+  margin-bottom: 120px;
+  padding: 15px;
+}
+
+.btn-primary {
+  @extend %button;
+  background-color: $cyan; 
+  border-bottom: 3px solid #1BA08D;
+}
+
+.btn-secondary {
+  @extend %button;
+  background-color: $light-blue;
+  border-bottom: 3px solid #4F63DE;
+}
+
+// Site Wrapper
+
+.site-wrapper {
+  width: 100%;
+}
+
+// Header
+
+header{
+  background-image: 
+  linear-gradient(to bottom, transparent, $white),
+  url('../images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+
+  .logo{
+    margin-bottom: 50px;
+  }
+}
+
+// Downloads
+
+.downloads{
+  p {
+    margin-bottom: 30px;
+  }
 }
