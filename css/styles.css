@@ -31,7 +31,7 @@ p {
   color: #9fabb2; }
 
 section {
-  margin-bottom: 120px;
+  margin-bottom: 110px;
   padding: 15px; }
 
 .btn-primary {
@@ -58,5 +58,15 @@ header {
 
 .downloads p {
   margin-bottom: 30px; }
+
+.info {
+  margin-bottom: 20px; }
+
+.features__img {
+  width: 90%;
+  margin-bottom: 50px; }
+
+.features p {
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=styles.css.map */
