@@ -8,7 +8,10 @@
   font-weight: 600;
   font-size: 14px;
   border-radius: 50px;
-  box-shadow: 0px 4px 8px rgba(23, 23, 23, 0.2); }
+  box-shadow: 0px 4px 8px rgba(23, 23, 23, 0.2);
+  transition: all .2s ease-in-out; }
+  .btn-primary:hover, .btn-secondary:hover {
+    cursor: pointer; }
 
 html {
   box-sizing: border-box;
@@ -45,10 +48,18 @@ section {
 .btn-primary {
   background-color: #26baa4;
   border-bottom: 3px solid #1BA08D; }
+  .btn-primary:hover {
+    background-color: #5DCCBB;
+    border-bottom: 3px solid #52B7A7;
+    box-shadow: 0px 4px 8px #5dccbb; }
 
 .btn-secondary {
   background-color: #6173ff;
   border-bottom: 3px solid #4F63DE; }
+  .btn-secondary:hover {
+    background-color: #8896FF;
+    border-bottom: 3px solid #7E87E2;
+    box-shadow: 0px 4px 8px #8896ff; }
 
 .site-wrapper {
   width: 100%; }

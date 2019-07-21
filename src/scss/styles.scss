@@ -24,6 +24,10 @@ $desktop-size: 1440px;
   font-size: 14px;
   border-radius: 50px;
   box-shadow: 0px 4px 8px rgba(23, 23, 23, .2);
+  transition: all .2s ease-in-out;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 // Base Styles
@@ -72,12 +76,22 @@ section {
   @extend %button;
   background-color: $cyan; 
   border-bottom: 3px solid #1BA08D;
+  &:hover{
+    background-color: #5DCCBB;
+    border-bottom: 3px solid #52B7A7;
+    box-shadow: 0px 4px 8px rgba(93, 204, 187, 1); 
+  }
 }
 
 .btn-secondary {
   @extend %button;
   background-color: $light-blue;
   border-bottom: 3px solid #4F63DE;
+  &:hover{
+    background-color: #8896FF;
+    border-bottom: 3px solid #7E87E2;
+    box-shadow: 0px 4px 8px rgba(136, 150, 255, 1);
+  }
 }
 
 // Site Wrapper
